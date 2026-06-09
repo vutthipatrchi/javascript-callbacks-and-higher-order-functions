@@ -1,12 +1,17 @@
 // Exercise #1: For Each Function
 const employeeSalaries = [20005, 40000, 32000, 14500, 344000];
 
-function addSalary5000(previousSalary) {
-  // Start coding here
+function addSalary5000(previousSalary) { // Callback Function
+  return salary + 5000;
 }
 
-function forEach(array, operation) {
-  // Start coding here
+function forEach(array, operation) { // Higher Order Function
+  let salary = [];
+    for (let item of array) {
+        result.push(operation(item));
+    }
+
+    return result;
 }
 
 // Using `forEach` function here
